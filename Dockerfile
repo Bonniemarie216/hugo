@@ -26,7 +26,7 @@ RUN mage hugo && mage install
 
 # ---
 
-FROM alpine:3.18
+FROM alpine:3.21.0
 
 COPY --from=build /go/bin/hugo /usr/bin/hugo
 
